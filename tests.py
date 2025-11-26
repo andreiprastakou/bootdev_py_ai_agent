@@ -1,3 +1,5 @@
-# import test_get_files_info
+# 1. import test_get_files_info
 
-import test_get_file_content
+# 2. import test_get_file_content
+
+import test_write_file
