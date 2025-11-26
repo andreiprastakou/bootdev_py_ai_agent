@@ -2,4 +2,6 @@
 
 # 2. import test_get_file_content
 
-import test_write_file
+# 3. import test_write_file
+
+import test_run_python_file

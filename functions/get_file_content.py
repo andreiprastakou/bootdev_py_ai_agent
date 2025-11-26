@@ -22,12 +22,12 @@ def _validate_readable_file(working_directory, file_path):
     resolved_working_directory = os.path.realpath(working_directory)
 
     if os.path.commonpath([resolved_path, resolved_working_directory]) != resolved_working_directory:
-      raise Exception(f'Cannot read "{file_path}" as it is outside the permitted working directory')
+      raise Exception(f'Cannot read "{file_path}" as it is outside the permitted working directory.')
 
     if not os.path.exists(resolved_path):
-      raise Exception(f"File not found or is not a regular file: {file_path}")
+      raise Exception(f"File not found or is not a regular file: {file_path}.")
 
     if not os.path.isfile(resolved_path):
-      raise Exception(f"File not found or is not a regular file: {file_path}")
+      raise Exception(f"File not found or is not a regular file: {file_path}.")
 
     return resolved_path

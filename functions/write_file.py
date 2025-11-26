@@ -18,6 +18,6 @@ def _validate_target_path(working_directory, file_path):
     resolved_working_directory = os.path.realpath(working_directory)
 
     if os.path.commonpath([resolved_path, resolved_working_directory]) != resolved_working_directory:
-      raise Exception(f'Cannot read "{file_path}" as it is outside the permitted working directory')
+      raise Exception(f'Cannot read "{file_path}" as it is outside the permitted working directory.')
 
     return resolved_path

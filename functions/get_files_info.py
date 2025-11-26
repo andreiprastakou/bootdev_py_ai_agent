@@ -21,10 +21,10 @@ def _validate_nested_directory(working_directory, directory):
     resolved_working_directory = os.path.realpath(working_directory)
 
     if os.path.commonpath([resolved_path, resolved_working_directory]) != resolved_working_directory:
-      raise Exception(f'Cannot list "{directory}" as it is outside the permitted working directory')
+      raise Exception(f'Cannot list "{directory}" as it is outside the permitted working directory.')
 
-    if not os.path.exists(resolved_path): raise Exception(f"{directory} does not exist")
+    if not os.path.exists(resolved_path): raise Exception(f"{directory} does not exist.")
 
-    if not os.path.isdir(resolved_path): raise Exception(f"{directory} is not a directory")
+    if not os.path.isdir(resolved_path): raise Exception(f"{directory} is not a directory.")
 
     return resolved_path
